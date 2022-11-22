@@ -14,5 +14,11 @@ namespace Tsarst.Grid
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+            //программно написать Grid
+            base.OnAppearing();
+        }
     }
 }

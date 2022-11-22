@@ -2,28 +2,51 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tsarst.Grid.MainPage">
-
-    <Grid Margin="20,35,20,20">
+    
+    <!--<Grid Margin="20,35,20,15" BackgroundColor="AliceBlue">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.5"/>
-            <ColumnDefinition Width="0.5"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        <Label Text="Колонка 0, Строка 0"/>
-
+        <Label Text="Колонка 0, Строка 0" 
+               BackgroundColor="Bisque"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center"/>        
         <Label Grid.Column="1"
-               Text="Колонка 1, Строка 0"/>
-
+               Text="Колонка 1, Строка 0"  
+               BackgroundColor="Bisque"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center"/>
+        
         <Label Grid.Row="1"
-               Text="Колонка 0, Строка 1"/>
+               Grid.ColumnSpan="2"
+               Text="Колонка 1, Строка 1" 
+               BackgroundColor="Bisque"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center"/>
 
+        <Label Grid.Row="2"
+               Text="Колонка 0, Строка 2" 
+               BackgroundColor="Bisque" 
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center"/>        
         <Label Grid.Column="1" 
-               Grid.Row="1"
-               Text="Колонка 1, Строка 1"/>
-    </Grid>
+               Grid.Row="2"
+               Text="Колонка 1, Строка 2"  
+               BackgroundColor="Bisque"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center"/>
+        <Button Grid.Column="2"
+                Grid.Row="0"
+                Grid.RowSpan="3"
+                Text="C2"/>
+    </Grid>-->
 
 </ContentPage>
